@@ -1,13 +1,6 @@
-describe('Jasmine run', function() {
-  it('should pass', function () {
-    expect(true).toBe(true);
-  });
-
-  it('should fail', function () {
-
-    expect(jasmine.Ajax).toBeDefined();
-  })
-});
+/**
+ * Test suites for main application components: app.Grid and app.GridData
+ */
 
 describe('GridData', function () {
   var gd = new app.GridData();
@@ -67,11 +60,12 @@ describe('Grid component', function () {
       <div class="table-container" id="grid-container"> \
       </div> \
     </div>',
-    rootElem = $(rootHtml),
+    rootElem,
     gridData = new app.GridData(),
     fetchDfd;
 
   beforeEach(function () {
+    rootElem = $(rootHtml);
     fetchDfd = $.Deferred();
     // mock call for url parameter
     spyOn(app.utils, 'getUrlParam').and.returnValue('23801');
