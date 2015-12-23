@@ -1,0 +1,23 @@
+<script type="text/x-template" id="grid-template">
+<? if (!data) { ?>
+  <p class="error">Нет данных!</p>
+<? } else { ?>
+  <table>
+    <thead>
+      <tr>
+      <? for (var key in data) { ?>
+        <th> <?= key.toUpperCase() ?> </th>
+      <? } ?>
+      </tr>
+    </thead>
+
+    <tbody>
+      <tr>
+      <? for (var key in data) { ?>
+        <td> <?= jQuery.isArray(data[key]) ? data[key].join(', ') : data[key] ?> </td>
+      <? } ?>
+      </tr>
+    </tbody>
+  </table>
+<? } ?>
+</script>

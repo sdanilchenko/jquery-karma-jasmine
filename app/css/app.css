@@ -1,0 +1,33 @@
+/* app css stylesheet */
+
+.container {
+	position: relative;
+	font-size: 12px;
+  font-family: sans-serif;
+	padding: 20px;
+}
+
+.table-container {
+	width: 1000px;
+  margin: 0 auto;
+}
+
+.table-container table {
+	width: 100%;
+	border: 1px solid grey;
+}
+
+.table-container td,
+.table-container th {
+	text-align: left;
+	vertical-align: top;
+	border: 1px solid black;
+	font-weight: normal;
+	padding: 2px 5px 2px 5px;
+}
+
+.table-container th {
+	color: white;
+	background-color: grey;
+	padding: 5px;
+}
