@@ -16,7 +16,7 @@ describe('GridData', function () {
 
   it('should request url with passed docId', function () {
     gd.fetch('23801');
-    expect(jasmine.Ajax.requests.mostRecent().url).toMatch('//iac.tender.pro/demo/company_23801.json');
+    expect(jasmine.Ajax.requests.mostRecent().url).toMatch('/server/grid-data_23801.json');
   });
 
   it('should return Promise', function () {

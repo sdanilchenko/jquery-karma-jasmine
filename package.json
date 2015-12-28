@@ -1,7 +1,7 @@
 {
-  "name": "tenderpro-test",
+  "name": "jquery-karma-jasmine",
   "version": "1.0.0",
-  "description": "Test task for Tender.PRO",
+  "description": "Simple setup with jQuery, Karma and Jasmine",
   "main": "index.js",
   "scripts": {
     "prestart": "npm install",

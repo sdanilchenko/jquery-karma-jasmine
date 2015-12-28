@@ -63,7 +63,7 @@ app.GridData = (function () {
   };
 
   GridData.prototype._getUrl = function (docId) {
-    return '//iac.tender.pro/demo/company_' + docId + '.json';
+    return '/server/grid-data_' + docId + '.json';
   };
 
   return GridData;
